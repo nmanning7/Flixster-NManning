@@ -1,29 +1,34 @@
-# Flixster-NManning
-Unit 1 Project (Needs Reworking)
-# Project 1 - Flixster
+# Flix
+Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Submitted by: Nia Manning
-Overview: This project lets users view a list of movies sourced from the The Movie Database API.
-Time spent: 7 hours spent in total
+📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
 
-## User Stories
+---
 
-The following **required** functionality is completed:
+## Flix Part 1
 
-* [x] User can **view a list of todo items**
-* [x ] User can **successfully add and remove items** from the todo list
-* [x] User's **list of items persisted** upon modification and and retrieved properly on app restart
+### User Stories
+#### REQUIRED (10pts)
+- [X] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
-The following **optional** features are implemented:
+#### BONUS
+- [X] (2pts) Views should be responsive for both landscape/portrait mode.
+   - [X] (1pt) In portrait mode, the poster image, title, and movie overview is shown.
+   - [X] (1pt) In landscape mode, the rotated alternate layout should use the backdrop image instead and show the title and movie overview to the right of it.
 
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
+- [X] (2pts) Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
+- [ ] (2pts) Improved the user interface by experimenting with styling and coloring.
+- [X] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
-The following **additional** features are implemented:
+### App Walkthough GIF
+`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-* [ ] List anything else that you can get done to improve the app functionality!
+<img src="walkthroughU1.gif" title = "Flixster Walkthrough" width='' alt='Video Walkthrough' />
 
-## Video Walkthrough
-**Screenshot Attached***
+### Notes
+The main challenge was getting the application to run properly on the emulator. 
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+### Open-source libraries used
 
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
